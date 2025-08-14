@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Tarea18_ImprimirUnaX {
     public static void main(String[] args) {
         /*
@@ -21,12 +23,15 @@ public class Tarea18_ImprimirUnaX {
         X____X
 
         Si n es igual a cero imprimir "ERROR" y finalizar la ejecución del programa.
-         */
+        */
 
         // Definir el tamaño de la matriz
-        int tam = 5;
+        Scanner leer = new Scanner(System.in);
+        // Solicitar los datos al usuario
+        System.out.print("Ingresa el tamaño que quieres que tenga la Matriz (n x n): ");
+        int tam = leer.nextInt();
 
-        // Inicializar la matriz de acuerdo al valor del tamaño
+        // Inicializar la matriz de acuerdo al valor del tamaño ingresado
         String[][] matrizX = new String[tam][tam];
 
         // Implementar lógica para construir la X
